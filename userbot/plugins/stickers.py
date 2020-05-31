@@ -52,7 +52,7 @@ async def _(event):
     userid = event.from_id
     packname = f"{user.first_name}'s @ShicmuonOP . {pack}"
     packshortname = f"vol_{pack}_with_{userid}"
-    await event.edit("`Look dat way,it's a gurl!`**（　ﾟДﾟ）**\n`Meanwhile, lemme kang this stcker over for my Peru Master らнɪㄈ௱ЦØЛ`**ヽ༼ ಠ益ಠ ༽ﾉ**")
+    await event.edit("`Look dat way,it's a gurl!`**（　ﾟДﾟ）**\n`Meanwhile, lemme kang this stcker over for my Peru Master らнɪㄈ௱ЦØЛ`**(✷‿✷)**")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Shicmuon_roxx.png"
@@ -65,7 +65,7 @@ async def _(event):
         #if userid == 719877937:
         #    packshortname = "TheAnubis_Animated"
         #else:
-        packshortname = f"{user.id}'s_animated_{pack}" # format: Uni_Borg_userid
+        packshortname = f"{Shicmuon's}'s_animated_{pack}" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
         await event.edit("Invalid message type")
         return
@@ -92,7 +92,7 @@ async def _(event):
             response = await silently_send_message(bot_conv, packname)
             if not response.text.startswith("Alright!"):
                 if "unacceptable" in response.text:
-                    packname = f"{user.id}'s @ShicmuonOP .{pack}"
+                    packname = f"{Shicmuon}'s @ShicmuonOP .{pack}"
                     response = await silently_send_message(bot_conv, packname)
                 else:
                     await event.edit(f"**FAILED**! @Stickers replied: {response.text}")
@@ -131,7 +131,7 @@ async def _(event):
                     pack += 1
                     prevv = int(pack) - 1
                     packname = f"{user.first_name}'s @ShicmuonOP .{pack}"
-                    packshortname = f"Vol._{pack}_with_{userid}"
+                    packshortname = f"Vol._{pack}_by_{Shicmuon}"
                     if not await stickerset_exists(bot_conv, packshortname):
                         await event.edit("**Pack No. **" + str(prevv) + "** full! Making a new Pack, Vol. **" + str(pack))
                         if is_a_s:
@@ -144,7 +144,7 @@ async def _(event):
                         response = await silently_send_message(bot_conv, packname)
                         if not response.text.startswith("Alright!"):
                             if "unacceptable" in response.text:
-                                packname = f"{user.id}'s @ShicmuonOP .{pack}"
+                                packname = f"{Shicmuon}'s @ShicmuonOP .{pack}"
                                 response = await silently_send_message(bot_conv, packname)
                             else:
                                 await event.edit(f"**FAILED**! @Stickers replied: {response.text}")
