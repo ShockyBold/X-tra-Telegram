@@ -50,9 +50,9 @@ async def _(event):
         user.first_name = user.id
     pack = 1
     userid = event.from_id
-    packname = f"{user.first_name}'s @XtraTgBot Vol.{pack}"
+    packname = f"{user.first_name}'s @ShicmuonOP{pack}"
     packshortname = f"vol_{pack}_with_{userid}"
-    await event.edit("`Look dat way,it's a gurl!`**（　ﾟДﾟ）**\n`Meanwhile, lemme kang this stcker over hehe`**ヽ༼ ಠ益ಠ ༽ﾉ**")
+    await event.edit("`Look dat way,it's a gurl!`**（　ﾟДﾟ）**\n`Meanwhile, lemme kang this stcker over for my Peru Master らнɪㄈ௱ЦØЛ`**ヽ༼ ಠ益ಠ ༽ﾉ**")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Anubis69_roxx.png"
