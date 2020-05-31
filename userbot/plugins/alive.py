@@ -13,7 +13,7 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     await alive.edit("`Currently Alive, My Peru Master らнɪㄈ௱ЦØЛ!` **(✿^‿^)**\n\n"
                      "`Telethon version: 6.9.0\nPython: 3.7.3\n`"
-                     # Don't change this else you a TikTok loser, Son of Jinping. Add your own.
-oh                     "`Bot Created By SnapDragon AND Bot edited by:` [ThePro](tg://user?id=1110200218), @ShicmuonOP\n"
+                     # Me Iz Peru That's What Matters! UwU
+oh                   "`Bot Created By SnapDragon AND Bot edited by:` [ThePro](tg://user?id=1110200218), @ShicmuonOP\n"
                      f"`My peru owner`: {DEFAULTUSER}\n\n"
                      "Nothing is Here For You!")
