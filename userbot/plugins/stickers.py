@@ -50,7 +50,7 @@ async def _(event):
         user.first_name = user.id
     pack = 1
     userid = event.from_id
-    packname = f"{user.first_name}'s @ShicmuonOP . {pack}"
+    packname = f"{user.first_name}'s @ShicmuonOP {pack}"
     packshortname = f"vol_{pack}_by_{Shicmuon}"
     await event.edit("`Look dat way,it's a gurl!`**（　ﾟДﾟ）**\n`Meanwhile, lemme kang this stcker over for my Peru Master らнɪㄈ௱ЦØЛ`**(✷‿✷)**")
 
@@ -131,7 +131,7 @@ async def _(event):
                     pack += 1
                     prevv = int(pack) - 1
                     packname = f"{user.first_name}'s @ShicmuonOP .{pack}"
-                    packshortname = f"Vol._{pack}_by_{Shicmuon}"
+                    packshortname = f"Vol._{pack}_by_{shicmuon}"
                     if not await stickerset_exists(bot_conv, packshortname):
                         await event.edit("**Pack No. **" + str(prevv) + "** full! Making a new Pack, Vol. **" + str(pack))
                         if is_a_s:
@@ -166,7 +166,7 @@ async def _(event):
                             await event.edit(f"**FAILED**! @Stickers replied: {response.text}")
                             return
                         elif response.text == "Sorry, this short name is unacceptable.":
-                            packshortname = f"pack_{pack}_animated_{user.id}"
+                            packshortname = f"pack_{pack}_animated_{shicmuon}"
                             await silently_send_message(bot_conv, packshortname)
                     else:
                         await event.edit("Pack No. " + str(prevv) + " full! Switching to Vol. " + str(pack))
